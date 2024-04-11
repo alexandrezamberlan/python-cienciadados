@@ -1,19 +1,26 @@
-Sejam bem vindos à disciplina Programação - PYTHON
+
 
 Sugestão de site para aprender Python: https://www.w3schools.com/python/
 
 
 O que é preciso saber para começar a programar:
-
 - O que é uma linguagem?
-
 - Para que serve uma linguagem?
-
 - O que compõe uma linguagem?
-
 - O que é um código fonte?
-
 - O que é e para que serve uma IDE?
+
+
+Python é uma linguagem versátil e poderosa que oferece uma série de recursos básicos que são diferenciais na programação de sistemas. 
+
+1. Sintaxe Limpa e Legibilidade
+2. Tipagem Dinâmica
+3. Ampla Biblioteca Padrão: Python possui uma vasta biblioteca padrão que oferece módulos e funções para realizar uma variedade de tarefas, desde manipulação de arquivos até redes e web scraping. 
+4. Facilidade de Integração
+5. Gerenciamento de Memória Automático
+6. Orientação a Objetos
+7. Interpretação e Compilação
+8. Framework Web: 
 
 
 Em Python há instruções:
