@@ -24,8 +24,6 @@ elif int(vetor_linha[1]) < 140:
 else:
     vetor_linha[1] = "Acima"
 
-
-
 #regra de carb até 100 abaixo; de 100 até 200 é normal; acima de 200 é acima
 if int(vetor_linha[3]) < 100:
     vetor_linha[3] = "Abaixo"
@@ -35,3 +33,4 @@ else:
     vetor_linha[3] = "Acima"
 
 print(vetor_linha)
+
