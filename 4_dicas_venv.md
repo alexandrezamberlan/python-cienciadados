@@ -30,4 +30,7 @@ python -m pip freeze > requirements.txt
     a) criar e ativar a venv
     b) instalar os pacotes que estão no arquivo requirements.txt
         python -m pip install -r requirements.txt
-        
+
+
+6) se for trocar de projeto ou repositório, lembre de desativar a venv
+    deactivate
