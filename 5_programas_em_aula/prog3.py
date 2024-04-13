@@ -1,34 +1,24 @@
 lista_glicemias = [100,98,78,45,238,390,67,98,100,98,100,98,67,55]
 
+lista_glicemias_categorizada = []
 
-for item in lista_glicemias:    
-    if (item < 75):
-        print(item, "Abaixo")
+for item in lista_glicemias:  
+    if (item < 55):
+        lista_glicemias_categorizada.append("Risco Abaixo")  
+    elif (item < 75):
+        lista_glicemias_categorizada.append("Abaixo")
     elif (item < 140):
-        print(item, "Normal")
+        lista_glicemias_categorizada.append("Normal")
     else:
-        print(item, "Acima")
+        lista_glicemias_categorizada.append("Acima")
+    
 
 print(lista_glicemias)
-
-soma = 0
-for item in lista_glicemias:
-    soma = soma + int(item)
-
-media = soma / len(lista_glicemias)
-print("A média de glicemia: ", media)
-
-
-#para calcular a mediana é necessário ordenar a estrutura
-lista_glicemias.sort()
-
-indice_meio = int(len(lista_glicemias)/2)
-print("A mediana de glicemia: ", lista_glicemias[indice_meio])
+print(lista_glicemias_categorizada)
 
 vezes_hipoglicemia = 0
-for item in lista_glicemias:
-    if int(item) < 70:
-        #vezes_hipoglicemia = vezes_hipoglicemia + 1
+for item in lista_glicemias_categorizada:
+    if item in ["Risco Abaixo", "Abaixo"]:        
         vezes_hipoglicemia += 1
 
 print("Quantidade de vezes de hipoglicemia: ", vezes_hipoglicemia)
@@ -42,9 +32,9 @@ print("Porcentagem de hipo: ", porcentagem_hipoglicemia)
 
 valor_moda = ""
 qtd_moda = 0
-for item in lista_glicemias:
+for item in lista_glicemias_categorizada:
     ocorrencias = 0
-    for outro_item in lista_glicemias:
+    for outro_item in lista_glicemias_categorizada:
         if (item == outro_item):
             ocorrencias += 1
     

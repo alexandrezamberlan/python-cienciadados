@@ -17,4 +17,48 @@
         2) ativar venv
         3) depois estabilizar a programação do código
         
+## 2ª Revisão
+    Na programação Python, em geral, há alguns recursos muito importantes:
+        1) manipulação de strings
+            split
+            replace
+            upper ou lower
+        2) manipulação de listas
+            len    - tamanho da lista
+            append - adicionar
+            remove - remover
+            in     - verificar se algo está na lista
+            sort   - ordenar
+        3) manipulação de arquivos texto (plain text)
+            .dat
+            .csv
+            .json
+            .xml
 
+            arquivo -> está em memória secundária (ssd, hd, flash)
+                nome
+                extensão
+                tipo
+                tamanho
+                endereço
+
+            variável -> prima do arquivo, só que em memória principal (RAM)
+                nome
+                tipo
+                tamanho
+                endereço
+
+            Na manipulação de arquivos em programas, um ARQUIVO precisa de uma VARIÁVEL
+            em memória principal o representando. Aqui, na disciplina, PROCURADOR
+
+            Operações:
+                - abrir ou open -> associar o procurador a um endereço de arquivo
+                    - leitura - read - r
+                    - escrita nova - write - w
+                    - escrita adição - append - a
+                - fechar a conexão do procurador com o arquivo
+                - percorrer o procurador
+                    - ler
+                        - linha a linha
+                    - escrever
+                        - linha a linha
