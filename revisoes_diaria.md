@@ -15,4 +15,6 @@
     - Momento de usar demais vezes VS Code (desktop)
         1) puxar as atualizações do projeto
         2) ativar venv
+        3) depois estabilizar a programação do código
         
+
