@@ -14,3 +14,9 @@ Conhecimento básico:
 2) manipular classes e objetos
 3) manipular listas (adicionar, localizar, remover e ordenar)
 4) manipular arquivos texto (abrir, fechar, percorrer, extrair dados)
+
+## Dicas
+  - pesquise e teste:
+    - https://github.com/alexandrezamberlan/python-cienciadados/blob/main/1_numpy_pandas/medidas_centrais_numpy.py
+    - https://github.com/alexandrezamberlan/python-cienciadados/blob/main/1_numpy_pandas/medidas_centrais_statistics.py
+  - 
