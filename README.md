@@ -1,8 +1,10 @@
 # Ecossistema Python para Ciência de Dados
 
-Repositório com códigos do ecossistema Python para fundamentos de programação na área de Ciência de Dados
+  - Repositório com códigos do ecossistema Python para fundamentos de programação na área de Ciência de Dados
 
-Python focado em Ciência de Dados e Mineração de Dados, com duração de 6 encontros:
+  - Python focado em Ciência de Dados e Mineração de Dados, com duração de 6 encontros:
+
+### Autores: Alexandre Zamberlan e Sylvio A. G. Vieira
 
 ## Encontro 1: Introdução ao Python e Ambiente de Desenvolvimento
 - Apresentação da disciplina e seus objetivos.
