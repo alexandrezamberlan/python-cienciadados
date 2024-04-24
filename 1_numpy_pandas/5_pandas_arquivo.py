@@ -36,6 +36,19 @@ dataFrame['Resultado'] = dataFrame['Resultado'].apply(classificar_resultado)
 dataFrame.to_csv(arquivo, index=False)
 print(dataFrame[['Dia Semana', 'Resultado']][:10])
 
+#filtrar dados
+dias_resultado_alto = dataFrame.loc[dataFrame['Resultado'] == 'alto']
+print(dias_resultado_alto)
+
+quantidade_dias_resultado_alto = dias_resultado_alto.value_counts()
+print(quantidade_dias_resultado_alto)
+
+dados_quarta = dataFrame.loc[dataFrame['Resultado'] == 'alto']
+print(dados_quarta)
+
+contagem_resultado = dataFrame['Resultado'].value_counts()
+print(contagem_resultado)
+
 #corrigir dados:
 
 #especifico
