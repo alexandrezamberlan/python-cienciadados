@@ -39,9 +39,9 @@ print(dataFrame[['Dia Semana', 'Resultado']][:10])
 #corrigir dados:
 
 #especifico
-df.at[3, 'Coluna'] = novo_valor
+dataFrame.at[3, 'Coluna'] = novo_valor
 #condição
-df.loc[df['Coluna'] == valor_incorreto, 'Coluna'] = novo_valor
+dataFrame.loc[dataFrame['Coluna'] == valor_incorreto, 'Coluna'] = novo_valor
 #todo o DataFrame
-df = df.replace(valor_incorreto, novo_valor)
+dataFrame = dataFrame.replace(valor_incorreto, novo_valor)
 
