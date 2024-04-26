@@ -1,9 +1,17 @@
 import random
-
-def gerar_listas(Listas, Tamanho):
+#[[1,2,34,5][5,7][][][][]]
+def gerar_listas(N, M):
+    # listas = []
+    # for _ in range(N):
+    #     lista = []
+    #     for _ in range(M):
+    #         lista.append(random.randint(1, 100))
+    #     listas.append(lista)
+    # return listas
+    
     listas = []
     for _ in range(N):
-        lista = [random.randint(1, 100) for _ in range(Tamanho)]
+        lista = [random.randint(1, 100) for _ in range(M)]
         listas.append(lista)
     return listas
 
