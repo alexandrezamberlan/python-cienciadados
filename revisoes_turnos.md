@@ -62,3 +62,37 @@
                         - linha a linha
                     - escrever
                         - linha a linha
+## 3ª Revisão
+    O Ecossistema Python: linguagem e bibliotecas|frameworks facilitam a construção de processos de descoberta de conhecimento
+        - Bibliotecas clássicas para mineração de dados, reconhecimento de padrões e descoberta de conhecimento
+            - TensorFlow
+            - Pandas
+            - Scikit learning
+            - MatplotLib
+            - Seaborn
+        - Processo de minerar: i) limpeza (categorizar colunas); ii) localizar dados relevantes
+        - Processo de reconhecer padrões: a partir dos dados trabalhados, perceber ou notar repetição|ocorrência
+        - Processo de descoberta de conhecimento: a partir dos padrões reconhecidos, é possível tomar decisões
+
+
+        - Base de dados:
+            - estruturada -> vindas de banco de dados; xml; csv; json
+            - não estruturadas -> textos (twiter, facebook, instagram, ...); textos jurídicos, entre outros
+        - Fase de limpeza:
+            - ter acesso ao arquivo: csv; json
+            - carregar o arquivo de dados na memória
+            - manipular limpezas:
+                - exclusão de colunas
+                - inclusão de colunas
+                - trocar valores analógicos por valores categóricos
+                - atualizar a base ou o arquivo
+            - Formas de realizar:
+                - linguagem Python e seus recursos básicos:
+                    - instruções de controle: if, while, for
+                    - manipulação de string
+                    - manipulação de arquivo via variável 'procurador': percorrer, ler, escrever
+                    - orientação a objetos: classe (atributos e métodos) e seus objetos|instância
+                - linguagem Python e suas biliotecas
+                    - biblioteca csv: para manipular o arquivo
+                    - biblioteca statisctics: para manipular as medidas centrais: media, mediana, moda
+                    - biblioteca numpy: para manipular as medidas centrais, exceto moda
