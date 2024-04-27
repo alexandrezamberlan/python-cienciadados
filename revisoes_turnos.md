@@ -96,3 +96,43 @@
                     - biblioteca csv: para manipular o arquivo
                     - biblioteca statisctics: para manipular as medidas centrais: media, mediana, moda
                     - biblioteca numpy: para manipular as medidas centrais, exceto moda
+
+## 4ª Revisão
+    - Importância do tratamento da base de dados
+        - identificar linhas ou registros inconsistentes|corrompidos
+
+******************************
+nome_arquivo = "dados.dat"
+
+#[10/04/2024;65 , 11/04/2024;145 , 12/04/2024;98 , 13/04/2024;125; 13/04/2024;]
+
+lista_glicemias = []
+with open(nome_arquivo, "r", encoding='utf8') as procurador:
+    for i,linha in enumerate(procurador):
+        vetor_linha = linha.split(";")
+        try:
+            valor_corrigido = vetor_linha[1].replace("\n","")
+            lista_glicemias.append(valor_corrigido)
+        except:
+            print('Erro na linha: ', i)
+            
+print(lista_glicemias)
+******************************
+
+    - Performance dentro base de dados: lista (array de 1 dimensao) e tabela (array de 2 dimensões)
+        - list comprehension -> tratar lista com lista
+            lista = [85, 98, 102, 102, 68, 95, 66, 55, 201]
+            lista_hipoglicemia = []
+            for item in lista:
+                if item <= 70:
+                    lista_hipoglicemia.append(item)
+
+            lista = [85, 98, 102, 102, 68, 95, 66, 55, 201]
+            lista_hipoglicemia = [item for item in lista if item <= 70]
+        
+        - biblioteca Numpy: computação científica de alto desempenho (funcionalidades são lançadas em cores de cpu ou gpu)
+            - transformar listas e matrizes em arrays
+            - realizar operações algébricas: somas, medias, medianas, multiplicação, divisão
+                -
+
+
