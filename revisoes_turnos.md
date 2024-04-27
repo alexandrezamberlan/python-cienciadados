@@ -135,4 +135,114 @@ print(lista_glicemias)
             - realizar operações algébricas: somas, medias, medianas, multiplicação, divisão
                 -
 
+## 5ª Revisão
+    - bibliotecas
+        - pandas
+            - comandos ou métodos básicos
 
+
+### exemplo 1
+import pandas as pd
+
+data1 = {'ID': [1, 2, 3, 4, 5, 6],
+         'Name': ['Ana', 'João', 'Ricardo','Alex', 'Bernardo', 'Carlos']}
+data2 = {'ID': [1, 2, 3, 4, 5, 6],
+         'Age': [25, 30, 35, 49, 21, 12]}
+
+#### associando base em data frame
+df1 = pd.DataFrame(data1)
+df2 = pd.DataFrame(data2)
+
+#### mesclando um data frame pela coluna ID da base
+df_mesclado = pd.merge(df1, df2, on='ID', how='inner')
+
+print("\nData frame mesclado:")
+print(df_mesclado)
+
+#### calculando a média do data frame pela coluna idade (Age)
+media_idade = df_mesclado['Age'].mean()
+print(f"\nMédia idade: {media_idade:.2f}")
+
+#### mostrando filtros de linhas em que a idade (Age) é maior que a média
+acima_media_idade = df_mesclado[df_mesclado['Age'] > media_idade]
+print("\nPessoas acima da média:")
+print(acima_media_idade)
+
+#### ordenando o data frame pela coluna Age | idade, de forma decrescente
+df_ordenado = df_mesclado.sort_values(by='Age', ascending=False)
+print("\nData frame ordenado pelo atributo Age:")
+print(df_ordenado)
+
+#### criando nova coluna 'Is_Adult' baseada no atributo Age
+df_ordenado['Is_Adult'] = df_ordenado['Age'] >= 18
+print("\nData frame com nova coluna:")
+print(df_ordenado)
+
+#### agrupando dados pelo atributo 'Is_Adult' e calculando a média pelo atributo 'Age' de cada grupo criado
+grupo_idades = df_ordenado.groupby('Is_Adult')['Age'].mean()
+print("\nMédia idade por grupo 'Is_Adult': ")
+print(grupo_idades)
+
+### exemplo 2 - arquivo no google colab
+from google.colab import drive
+drive.mount('/content/drive')
+import pandas as pd
+
+#### carregar arquivo em dataframe
+arquivo = '<caminho do arquivo>' #arquivo com dados de glicemia por dias da semana
+
+#### associando base em data frame
+dataFrame = pd.read_csv(arquivo)
+
+#### exibir fatias do dataframe
+print(dataFrame[:5])
+print(dataFrame[['Dia Semana', 'Resultado']][:5])
+print(dataFrame.iloc[5:11, 0:3])
+
+#### aplicar as medidas centrais: media, mediana e moda
+mediana = dataFrame['Resultado'].median()
+moda = dataFrame['Resultado'].mode()
+media = dataFrame['Resultado'].mean()
+
+#### limpar dados   
+def classificar_resultado(valor):
+    if valor <= 90:
+        return 'baixo'
+    elif valor <= 120:
+        return 'normal'
+    else:
+        return 'alto'
+
+dataFrame['Resultado'] = dataFrame['Resultado'].apply(classificar_resultado)
+
+#### salvar no csv
+dataFrame.to_csv(arquivo, index=False)
+print(dataFrame[['Dia Semana', 'Resultado']][:10])
+
+#### filtrar dados
+dias_resultado_alto = dataFrame.loc[dataFrame['Resultado'] == 'alto']
+print(dias_resultado_alto)
+
+quantidade_dias_resultado_alto = dias_resultado_alto.value_counts()
+print(quantidade_dias_resultado_alto)
+
+dados_quarta = dataFrame.loc[dataFrame['Resultado'] == 'alto']
+print(dados_quarta)
+
+contagem_resultado = dataFrame['Resultado'].value_counts()
+print(contagem_resultado)
+
+#### corrigir dados:
+
+especifico
+dataFrame.at[3, 'Coluna'] = novo_valor
+
+condição
+dataFrame.loc[dataFrame['Coluna'] == valor_incorreto, 'Coluna'] = novo_valor
+
+todo o DataFrame
+dataFrame = dataFrame.replace(valor_incorreto, novo_valor)
+
+
+
+        - matplotlib

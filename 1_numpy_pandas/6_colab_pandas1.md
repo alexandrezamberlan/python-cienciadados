@@ -20,10 +20,6 @@ carros[cars['Miles_per_Gallon'] > 20.0]
 ```py
 from google.colab import data_table
 data_table.enable_dataframe_formatter()
-```
-
-```py
-from google.colab import data_table
 from vega_datasets import data
 ```
 
