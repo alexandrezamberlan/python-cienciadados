@@ -4,7 +4,7 @@
 
   - Python focado em Ciência de Dados e Mineração de Dados, com duração de 6 encontros:
 
-### Autores: Alexandre Zamberlan, Bernardo Viero e Sylvio A. G. Vieira
+### Autores: Alexandre Zamberlan, Bernardo Viero, Sylvio A. G. Vieira e Robertson Ebling dos Santos
 
 ## Encontro 1: Introdução ao Python e Ambiente de Desenvolvimento
 - Apresentação da disciplina e seus objetivos.
