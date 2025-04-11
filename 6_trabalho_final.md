@@ -19,4 +19,4 @@ Conhecimento básico:
   - pesquise e teste:
     - https://github.com/alexandrezamberlan/python-cienciadados/blob/main/1_numpy_pandas/medidas_centrais_numpy.py
     - https://github.com/alexandrezamberlan/python-cienciadados/blob/main/1_numpy_pandas/medidas_centrais_statistics.py
-  - 
+    
