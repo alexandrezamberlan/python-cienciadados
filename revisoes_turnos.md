@@ -6,16 +6,20 @@
             1) baixar na máquina pessoal e combinar com VS Code
             2) uso na Web direto no site do GitHub (logado)
             3) uso integrado com outras ferramentas Web (Replit, Google Colab)
-    
-    - Momento de usar 1ª vez VS Code (desktop)
-        1) clonar projeto/repositório
-        2) criar e ativar venv
-        3) instalar os pacotes necessários do requirements.txt
-    
-    - Momento de usar demais vezes VS Code (desktop)
-        1) puxar as atualizações do projeto
-        2) ativar venv
-        3) depois estabilizar a programação do código
+    - Importância de preparar uma base de dados para receber a mineração -> processo de reconhecimento de padrões
+        - trabalhar com dados literias ou strings ou categorizados - dados de referência
+    - Ecossistema Python
+        - bibliotecas, pacotes, frameworks (boas práticas - padrões) e API (integração)
+    - Ambiente desenvolvimento - Google Colab
+    - Linguagem PYthon
+        - instruções - diretivas de comunicação 
+            - input
+            - print
+            - if
+            - if - else
+            - if - elif
+            - while
+            - for
         
 ## 2ª Revisão
     Na programação Python, em geral, há alguns recursos muito importantes:
