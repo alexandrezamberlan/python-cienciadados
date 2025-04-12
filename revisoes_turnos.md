@@ -33,7 +33,9 @@
             remove - remover
             in     - verificar se algo está na lista
             sort   - ordenar
-        3) manipulação de arquivos texto (plain text)
+        3) manipulação de dicionários
+            conteúdo é formado por um par -> chave:valor
+        4) manipulação de arquivos texto (plain text)
             .dat
             .csv
             .json
