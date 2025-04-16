@@ -7,21 +7,19 @@
 ### Autores: Alexandre Zamberlan, Bernardo Viero, Sylvio A. G. Vieira e Robertson Ebling dos Santos
 
 #### Unidade 1 - Introdução ao Python 
-1.1 Ambiente de desenvolvimento
-1.2 Instruções básicas e de controle
-1.3 Coleções e suas operações
-
+  - 1.1 Ambiente de desenvolvimento
+  - 1.2 Instruções básicas e de controle
+  - 1.3 Coleções e suas operações
+  
 #### Unidade 2 - Manipulação de Dados
-2.1 Arquivos
-2.2 Estatística Descritiva
-2.3 Boas práticas de desenvolvimento
+  - 2.1 Arquivos
+  - 2.2 Estatística Descritiva
+  - 2.3 Boas práticas de desenvolvimento
 
 #### Unidade 3 - Manipulação de Dados com Bibliotecas Básicas; 
-3.1 Biblioteca NumPy
-3.2 Biblioteca Pandas
-3.3 Visualização de Dados com Matplotlib
-
-
+  - 3.1 Biblioteca NumPy
+  - 3.2 Biblioteca Pandas
+  - 3.3 Visualização de Dados com Matplotlib
 
 ## Primeira semana: Introdução ao Python e Ambiente de Desenvolvimento
 - Configuração do ambiente de desenvolvimento (instalação do Python, Google Colab e pacotes necessários para ciência de dados).
